@@ -2,28 +2,29 @@ body {
   font-family: 'Roboto Mono',monospace;
   min-height: 400px;
   background-image: url('https://caelum-online-public.s3.amazonaws.com/imersao-dev-3/bg.png');
-  background-color: #000000;
-  background-size: 80vh;
-  background-position: center;
+  background-color: #2eaf9a;
+  background-size: 85vh;
+  background-position: center bottom;
   background-repeat: no-repeat;
 }
 
 .container {
   text-align: center;
-  padding: 20px;
-  height: 100vh;
+  padding: 5px;
+  height: 35vh;
 }
 
 .page-title {
   color:#ffffff;
-  margin: 0 0 5px;
+  margin: 10 0 5px;
   font-size: 25px;
 }
 
 .page-subtitle {
-  color:#ffffff;
-  margin-top: 5px;
+  color: #ffffff;
+  margin-top: 6px;
   font-size: 18px;
+  margin-bottom: 6px;
 }
 
 .page-logo {
@@ -37,20 +38,55 @@ body {
   right: 10px;
 }
 
-@media (max-width:400) {  
+h3 {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.notas-bimestres {
+  text-align: center;
+  margin-bottom: 85px;  
+}
+
+.notas-bimestres input {
+  width: 40px;
+  border: 2px solid green;
+  border-radius: 15%;
+  font-size: small;
+  color: rgb(34, 34, 185);
+  background-color: aquamarine;
+}
+
+.notas-bimestres button {   
+  color: rgb(97, 78, 57);
+  background-color: aquamarine;
+  border: 2px solid #1c5f6b;
+  border-radius: 15%;
+  font-size: 15px; 
+}
+
+@media (max-width:620) {  
   body {
     min-height: 300px;
     background-color: #000000;
-    background-size: 100vh;
-    background-position: center;
+    background-size: 80vh;
+    background-position: center bottom;
     background-repeat: no-repeat;
   }
 
+  .container {
+    text-align: center;
+    padding: 5px;
+    height: 32vh;
+  }
+
   .page-title {
-    font-size: 25px;
+    margin-top: 40px;
+    font-size: 22px;
   }
   
   .page-subtitle {
-    font-size: 18px;
+    font-size: 10px;
   }
 }
